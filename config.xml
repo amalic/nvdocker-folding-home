@@ -1,0 +1,32 @@
+
+<config>
+  <!-- Client Control -->
+  <fold-anon v='true'/>
+
+  <!-- Folding Slot Configuration -->
+  <gpu v='true'/>
+
+  <!-- HTTP Server -->
+  #Following allows access from local network
+  <allow v='192.168.1.1/24'/>
+
+  <!-- Remote Command Server -->
+  #Change password for remote access
+  <password v='{{REMOTE_PASSWORD}}'/> <!-- from ENV values / default override_me -->
+
+  <!-- User Information -->
+  #Change Team Number and Username if desired. Currently folding for UnRAID team!
+  <team v='{{TEAM}}'/> <!-- from env values / default 0-->
+  <user v='{{USERNAME}}'/> <!-- from ENV values / default Anonymous -->
+  <passkey v='{{PASSWORD}}'/> <!-- from ENV values / default empty for Anonymous user-->
+
+  <!-- Web Server -->
+  #Following allows access from local network
+  <web-allow v='192.168.1.1/24'/>
+
+  <!-- CPU Use -->
+  <power v='medium'/> 
+  
+  <!-- Folding Slots -->
+  <slot id='0' type='GPU'/>
+</config>
