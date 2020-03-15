@@ -14,5 +14,5 @@ docker build -t amalic/nvdocker-folding-home .
 
 ## Run
 ```
-docker run -t --gpus all -p 36330:36330 -p 7396:7396 amalic/nvdocker-folding-home
+docker run -it --gpus all -p 36330:36330 -p 7396:7396 amalic/nvdocker-folding-home
 ```

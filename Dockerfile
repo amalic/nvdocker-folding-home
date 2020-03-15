@@ -1,5 +1,5 @@
 
-FROM nvidia/cuda:latest
+FROM nvidia/opencl:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
