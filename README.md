@@ -2,7 +2,7 @@
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/amalic/nvdocker-folding-home)
 [![Docker Pulls](https://img.shields.io/docker/pulls/amalic/nvdocker-folding-home.svg)](https://hub.docker.com/r/amalic/nvdocker-folding-home/)
 
-# Folding@Home docker image based on nvidia/cuda
+# Folding@Home docker image based on nvidia/opencl
 
 ## Prerequisites
 Make sure you have properly installed and configured Docker and NVidia Docker
