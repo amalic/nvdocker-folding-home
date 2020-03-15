@@ -15,7 +15,7 @@
   <password v='{{REMOTE_PASSWORD}}'/> <!-- from ENV values / default override_me -->
 
   <!-- User Information -->
-  #Change Team Number and Username if desired. Currently folding for UnRAID team!
+  #Change Team Number and Username if desired.
   <team v='{{TEAM}}'/> <!-- from env values / default 0-->
   <user v='{{USERNAME}}'/> <!-- from ENV values / default Anonymous -->
   <passkey v='{{PASSWORD}}'/> <!-- from ENV values / default empty for Anonymous user-->
