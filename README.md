@@ -16,6 +16,10 @@ docker build -t amalic/nvdocker-folding-home .
 ```
 docker run -it --gpus all amalic/nvdocker-folding-home
 ```
+### Environment variables
+- USERNAME (default Anonymous)
+- TEAM (default 0)
+- PASSWORD (default empty string)
 
 ### Sample Output
 Seems that it will run into timeouts while trying to find a server with available work units.
