@@ -25,7 +25,7 @@
   <web-allow v='192.168.1.1/24'/>
 
   <!-- CPU Use -->
-  <power v='medium'/> 
+  <power v='{{POWER}}'/> 
   
   <!-- Folding Slots -->
   <slot id='0' type='GPU'/>
