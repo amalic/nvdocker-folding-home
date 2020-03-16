@@ -18,7 +18,7 @@ docker run -d --gpus all -p 80:7396 amalic/nvdocker-folding-home
 ```
 You can monitor the progress via webinterface on http://localhost
 
-*There's a known bugh with the web interface. In case the page continues reloading press Ctrl+F5 to clear the caches*
+*There's a known bug with the web interface. In case the page continues reloading press Ctrl+F5 to clear the caches*
 
 ### Environment variables
 - USERNAME (default Anonymous)
