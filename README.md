@@ -16,6 +16,10 @@ docker build -t amalic/nvdocker-folding-home .
 ```
 docker run -d --gpus all -p 80:7396 -e USERNAME=amalic amalic/nvdocker-folding-home
 ```
+Inject your own config file by adding following switch 
+```
+--- -v <path to your config xml>:/etc/fahclient/config.xml ...
+```
 You can monitor the progress via webinterface on http://localhost
 
 *There's a known bug with the web interface. In case the page continues reloading press Ctrl+F5 to clear the caches*
