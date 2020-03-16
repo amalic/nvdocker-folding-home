@@ -5,7 +5,7 @@
 # Folding@Home docker image based on nvidia/opencl
 
 ## Prerequisites
-Make sure you have properly installed and configured Docker and NVidia Docker
+Make sure you have properly installed and configured Docker and [NVidia Docker}(https://github.com/NVIDIA/nvidia-docker)
 
 ## Build
 ```
