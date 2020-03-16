@@ -14,7 +14,7 @@ docker build -t amalic/nvdocker-folding-home .
 
 ## Run
 ```
-docker run -d --gpus all -p 80:7396 amalic/nvdocker-folding-home
+docker run -d --gpus all -p 80:7396 -e USERNAME=amalic amalic/nvdocker-folding-home
 ```
 You can monitor the progress via webinterface on http://localhost
 
