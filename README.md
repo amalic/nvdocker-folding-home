@@ -26,7 +26,7 @@ You can monitor the progress via webinterface on http://localhost
 - PASSWORD (default empty string)
 - REMOTE_PASSWORD (default *override_me*)
 
-### Console Log Output
+### Console log output
 Seems that it will run into timeouts while trying to find a server with available work units.
 ```
 Starting fahclient ... OK
