@@ -21,9 +21,10 @@ You can monitor the progress via webinterface on http://localhost
 *There's a known bug with the web interface. In case the page continues reloading press Ctrl+F5 to clear the caches*
 
 ### Environment variables
-- USERNAME (default Anonymous)
-- TEAM (default 0)
+- USERNAME (default *Anonymous*)
+- TEAM (default *0*)
 - PASSWORD (default empty string)
+- REMOTE_PASSWORD (default *override_me*)
 
 ### Sample Output
 Seems that it will run into timeouts while trying to find a server with available work units.
