@@ -14,8 +14,10 @@ docker build -t amalic/nvdocker-folding-home .
 
 ## Run
 ```
-docker run -it --gpus all amalic/nvdocker-folding-home
+docker run -d --gpus all -p 80:7396 amalic/nvdocker-folding-home
 ```
+You can monitor the progress via webinterface on http://localhost
+
 ### Environment variables
 - USERNAME (default Anonymous)
 - TEAM (default 0)
