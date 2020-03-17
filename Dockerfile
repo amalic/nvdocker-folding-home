@@ -18,7 +18,8 @@ RUN apt-get update && apt-get install -y wget && \
   dpkg -i --force-depends fahclient_7.5.1_amd64.deb && \
   rm fahclient*.deb && \
   apt-get purge --remove wget -y && \
-  apt-get autoremove -y
+  apt-get autoremove -y && \
+  rm -rf /var/lib/apt/lists/*
 
 EXPOSE 36330 7396
 
