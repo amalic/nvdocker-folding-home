@@ -5,8 +5,7 @@
 # Folding@Home docker image based on nvidia/opencl
 
 ## Prerequisites
-Make sure you have properly installed and configured Docker and [NVidia Docker](https://github.com/NVIDIA/nvidia-docker)
-Microsoft Windows is not supported by NVidia Docker see [Platform Support](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#platform-support). Please use the native client instead.
+Make sure you have properly installed and configured Docker and [NVidia Docker](https://github.com/NVIDIA/nvidia-docker). Microsoft Windows is not supported by NVidia Docker see [Platform Support](https://github.com/NVIDIA/nvidia-docker/wiki/Frequently-Asked-Questions#platform-support). Please use the native client instead.
 
 ## Build
 ```
