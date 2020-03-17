@@ -1,13 +1,12 @@
 
 FROM nvidia/opencl:latest
 
-ENV DEBIAN_FRONTEND noninteractive
-
-ENV USERNAME Anonymous
-ENV TEAM 0
-ENV PASSWORD ""
-ENV REMOTE_PASSWORD "override_me"
-ENV POWER medium
+ENV DEBIAN_FRONTEND="noninteractive" \
+  USERNAME="Anonymous" \
+  TEAM="0" \
+  PASSWORD="" \
+  REMOTE_PASSWORD="override_me" \
+  POWER="medium"
 
 ADD config.xml /etc/fahclient/config.xml
 
