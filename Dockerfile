@@ -10,8 +10,6 @@ ENV DEBIAN_FRONTEND="noninteractive" \
 
 ADD config.xml /etc/fahclient/config.xml
 
-WORKDIR /tmp
-
 RUN apt-get update && apt-get install -y wget && \
   wget https://download.foldingathome.org/releases/public/release/fahclient/debian-stable-64bit/v7.5/fahclient_7.5.1_amd64.deb && \
   dpkg -i --force-depends fahclient_7.5.1_amd64.deb && \
