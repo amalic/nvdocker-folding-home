@@ -6,7 +6,8 @@ ENV DEBIAN_FRONTEND="noninteractive" \
   TEAM="0" \
   PASSWORD="" \
   REMOTE_PASSWORD="override_me" \
-  POWER="medium"
+  POWER="medium" \
+  USE_GPU="true"
 
 ADD config.xml /etc/fahclient/config.xml
 
@@ -20,6 +21,6 @@ RUN apt-get update && apt-get install -y wget && \
 
 EXPOSE 36330 7396
 
-CMD sed -i "s/{{USERNAME}}/$USERNAME/g;s/{{TEAM}}/$TEAM/g;s/{{PASSWORD}}/$PASSWORD/g;s/{{REMOTE_PASSWORD}}/$REMOTE_PASSWORD/g;s/{{POWER}}/$POWER/g" /etc/fahclient/config.xml && \
+CMD sed -i "s/{{USERNAME}}/$USERNAME/g;s/{{TEAM}}/$TEAM/g;s/{{PASSWORD}}/$PASSWORD/g;s/{{REMOTE_PASSWORD}}/$REMOTE_PASSWORD/g;s/{{POWER}}/$POWER/g;s/{{USE_GPU}}/$USE_GPU/g" /etc/fahclient/config.xml && \
   /etc/init.d/FAHClient start && \ 
   tail -f /var/lib/fahclient/log.txt

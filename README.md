@@ -29,6 +29,7 @@ You can monitor the progress via webinterface on http://localhost
 - TEAM (default *0*)
 - PASSWORD (default empty string)
 - REMOTE_PASSWORD (default *override_me*)
+- USE_GPU (default *true*)
 
 ### Console log output
 Seems that it will run into timeouts while trying to find a server with available work units.

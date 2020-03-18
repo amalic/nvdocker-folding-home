@@ -4,7 +4,7 @@
   <fold-anon v='true'/>
 
   <!-- Folding Slot Configuration -->
-  <gpu v='true'/>
+  <gpu v='{{USE_GPU}}'/>
 
   <!-- HTTP Server -->
   #Following allows access from local network
