@@ -14,7 +14,11 @@ docker build -t amalic/nvdocker-folding-home .
 
 ## Run
 ```
-docker run -d --restart unless-stopped --gpus all -p 80:7396 -e USERNAME=<FAH_username> amalic/nvdocker-folding-home
+docker run -d --restart unless-stopped --gpus all -p 80:7396 amalic/nvdocker-folding-home
+```
+If you want to run it under a specific username add following switch
+```
+... -e USERNAME=<FAH_username> ...
 ```
 Inject your own config file by adding following switch 
 ```
