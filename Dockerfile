@@ -22,5 +22,6 @@ RUN apt-get update && apt-get install -y wget && \
 EXPOSE 36330 7396
 
 CMD sed -i "s/{{USERNAME}}/$USERNAME/g;s/{{TEAM}}/$TEAM/g;s/{{PASSWORD}}/$PASSWORD/g;s/{{REMOTE_PASSWORD}}/$REMOTE_PASSWORD/g;s/{{POWER}}/$POWER/g;s/{{USE_GPU}}/$USE_GPU/g" /etc/fahclient/config.xml && \
+  if test "$USE_GPU" = 'false'; then sed -i "s#='GPU'/#='CPU'/#" /etc/fahclient/config.xml; fi && \
   /etc/init.d/FAHClient start && \ 
   tail -f /var/lib/fahclient/log.txt
