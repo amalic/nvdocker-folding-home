@@ -8,7 +8,7 @@
 
   <!-- HTTP Server -->
   #Following allows access from local network
-  <allow v='172.17.0.1/24'/>
+  <allow v='0/0'/>
 
   <!-- Remote Command Server -->
   #Change password for remote access
@@ -22,7 +22,7 @@
 
   <!-- Web Server -->
   #Following allows access from local network
-  <web-allow v='172.17.0.1/24'/>
+  <web-allow v='0/0'/>
 
   <!-- CPU Use -->
   <power v='{{POWER}}'/> 
